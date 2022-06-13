@@ -1,0 +1,16 @@
+.wrapper{
+  position: relative;
+}
+
+.tooltip{
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  display: inline;
+  padding: 0.5rem;
+  background: var(--bg-primary);
+  border-radius: var(--border-radius);
+  box-shadow: rgba(0, 0, 0, 0.08) 0 3px 8px 0, rgba(0, 0, 0, 0.02) 0 0 0 1px;
+}

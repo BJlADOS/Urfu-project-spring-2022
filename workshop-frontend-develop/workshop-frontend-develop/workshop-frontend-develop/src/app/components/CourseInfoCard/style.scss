@@ -1,0 +1,56 @@
+.card {
+  width: 100%;
+
+  h4 {
+    margin-bottom: 0.4rem;
+    font-size: 1.2rem;
+  }
+
+  p {
+    margin: 0;
+    white-space: pre-line;
+  }
+}
+
+.imgWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.infoLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0.2rem 0;
+
+  .title {
+    font-family: var(--header-font-family);
+  }
+
+  .info {
+    color: var(--primary-medium);
+    font-size: 1.1rem;
+  }
+}
+
+.editField {
+  width: 100%;
+  max-width: 300px;
+}
+
+.competencySearch {
+  margin-bottom: 0.5rem;
+}

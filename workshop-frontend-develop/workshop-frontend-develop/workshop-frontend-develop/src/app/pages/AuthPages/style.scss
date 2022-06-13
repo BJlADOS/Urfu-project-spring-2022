@@ -1,0 +1,92 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  .logo {
+    margin-bottom: 2rem;
+    margin-top: -2rem;
+    height: 4rem;
+    max-width: 500px;
+    width: 100%;
+    background-image: var(--logo-url);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+  }
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  min-height: 400px;
+  height: fit-content;
+  margin: 0;
+}
+
+.cardContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+
+  input {
+    &:not(:first-child) {
+      margin-top: 0.8rem;
+    }
+  }
+}
+
+.formButtons {
+  flex-direction: column;
+  margin-top: 1rem;
+  text-align: center;
+
+  a {
+    display: block;
+    cursor: pointer;
+    color: var(--primary);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.authButton {
+  width: 100%;
+  max-width: 200px;
+  margin: 0.5rem auto;
+}
+
+.dialogInnerCard {
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+.updatePassButton {
+  width: 100%;
+  max-width: 200px;
+  margin: 3rem auto auto;
+}

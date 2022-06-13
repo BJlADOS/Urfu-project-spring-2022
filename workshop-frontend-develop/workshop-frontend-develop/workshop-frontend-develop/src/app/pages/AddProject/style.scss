@@ -1,0 +1,79 @@
+.addProjectTitle {
+  margin-bottom: 1rem;
+}
+
+.formContainer {
+  display: flex;
+
+  .containerInputs {
+    margin: 0;
+    width: 60%;
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type='number']::-webkit-outer-spin-button,
+    input[type='number']::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+
+    input[type='number'] {
+      -moz-appearance: textfield;
+    }
+  }
+}
+
+.roleCard {
+  width: 100%;
+  display: flex;
+
+  .input {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .field {
+    width: 75%;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.roleCard div:first-child {
+  font-size: 1.2rem;
+}
+
+.competency_container {
+  display: flex;
+  width: 100%;
+  max-width: 300px;
+  flex-direction: column;
+  margin-left: 1rem;
+
+  .competencyCard {
+    height: 200px;
+    width: 100%;
+    margin: 0 auto 1rem;
+  }
+}
+
+.addCard {
+  margin-top: 1rem;
+
+  .submitForm {
+    margin-top: 1em;
+    width: 20%;
+  }
+}
+
+.capacityButtons {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 0.5rem;
+}

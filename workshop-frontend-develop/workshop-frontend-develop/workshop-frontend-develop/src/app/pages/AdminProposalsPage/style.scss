@@ -1,0 +1,126 @@
+headerCard {
+  h2 {
+    font-size: 1.8rem;
+
+    .proposalsCount {
+      margin-left: 0.5rem;
+      font-size: 1.6rem;
+      color: var(--grey-2);
+    }
+  }
+}
+
+.searchSection {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.proposalContainer {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: stretch;
+
+}
+
+.proposalContainer .largeColumn {
+  display: flex;
+  flex: 3;
+
+  p {
+    width: 80%;
+    overflow-wrap: break-word;
+  }
+
+  .card {
+    height: 100%;
+    width: 100%;
+  }
+
+}
+
+.proposalContainer .smallColumn {
+  display: flex;
+  margin-left: 1rem;
+  flex: 1;
+  min-width: 150px;
+  align-self: stretch;
+
+  span {
+    width: 80%;
+    overflow-wrap: break-word;
+  }
+}
+
+.proposalContainer .smallColumn a {
+
+  margin: 0;
+  display: flex;
+  align-self: stretch;
+  flex-wrap: wrap;
+
+  & div:first-of-type {
+    overflow-wrap: break-word;
+    margin-top: auto;
+  }
+
+  & div:last-of-type {
+    margin-bottom: auto;
+  }
+}
+
+//.proposalContainer .card{
+//  display: flex;
+//  flex: 3;
+//  p{
+//    width: 80%;
+//    overflow-wrap: break-word;
+//  }
+//}
+//.proposalContainer .authorCard{
+//  p{
+//    width: 90%;
+//    overflow-wrap: break-word;
+//  }
+//  display: flex;
+//  margin-left: 1rem;
+//  flex: 1;
+//  min-width: 150px;
+//
+//}
+.proposalContainer .additional {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  flex-wrap: wrap;
+  color: var(--grey-2)
+
+}
+
+.proposalContainer .additional div {
+  //display: inline-block;
+  min-width: 150px;
+
+  & b {
+    color: var(--blue-4);
+  }
+
+  & span {
+    color: var(--blue-4);
+  }
+}
+
+.proposalContainer .purpose {
+  margin: 1rem 0.5rem 0.8rem 0.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .proposalContainer .smallColumn {
+    display: none;
+  }
+
+}
+

@@ -1,0 +1,111 @@
+.card {
+  margin-top: 1rem;
+
+  input[type="file"] {
+    cursor: pointer;
+
+    &::-webkit-file-upload-button {
+      border: none;
+      border-radius: var(--border-radius);
+      background-color: var(--primary);
+      height: 2rem;
+      line-height: 1.4rem;
+      color: var(--button-text);
+      padding: 0.4rem;
+      margin: 0.2rem;
+      margin-right: 0.5rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.downloadTemplate {
+  margin-top: 0.5rem;
+  max-width: 200px;
+}
+
+.rewriteProjects {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  display: block;
+
+  input[type="checkbox"] {
+    margin-left: 0.5rem;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .error {
+    color: var(--danger);
+  }
+
+  .success {
+    color: var(--primary);
+  }
+}
+
+.projectButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0.2rem;
+  margin-left: -0.5rem;
+  justify-content: space-between;
+
+  button {
+    margin: 0.2rem 0.5rem;
+  }
+  .success {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary);
+  }
+}
+
+.footnote {
+  margin-top: 0.2rem;
+}
+
+.scenarioTechnologySection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0 -0.5rem;
+  margin-top: 1rem;
+
+  .card {
+    flex: 1;
+    margin: 0 0.5rem;
+    margin-bottom: 1rem;
+    min-width: 230px;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .name {
+      font-size: 1.2rem;
+    }
+  }
+}
+.projectButtonsContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  button:last-of-type{
+    margin-top: 0.5rem;
+    max-width: 300px;
+  }
+}

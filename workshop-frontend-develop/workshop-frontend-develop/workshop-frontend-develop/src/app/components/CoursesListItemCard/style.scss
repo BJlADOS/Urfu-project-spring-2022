@@ -1,0 +1,109 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  svg {
+    font-size: 1rem;
+    margin-left: 0.3rem;
+    vertical-align: top;
+    color: var(--primary);
+  }
+
+  .closed {
+    color: var(--danger);
+    font-size: 1rem;
+  }
+}
+
+.courseRow {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+}
+
+.sideCardContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto 0;
+
+  .text {
+    margin: auto 0;
+    padding-right: 0.2rem;
+    flex: 1;
+  }
+
+  h5 {
+    font-size: 1rem;
+
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.largeSection {
+  display: flex;
+  flex: 3;
+}
+
+.smallSection {
+  display: flex;
+  margin-left: 1rem;
+  flex: 1;
+  min-width: 150px;
+}
+
+.courseStats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  color: var(--grey-2);
+}
+
+.progressWrapper {
+    display: grid;
+    grid-template-columns: auto 120px auto;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.imgWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  min-width: 80px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .smallSection {
+    display: none;
+  }
+
+  .courseStats span {
+    white-space: pre-line;
+  }
+}

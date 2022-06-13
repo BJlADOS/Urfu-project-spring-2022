@@ -1,0 +1,25 @@
+.appCard {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-secondary);
+  border-radius: var(--border-radius);
+  margin: auto;
+  text-decoration: inherit;
+  color: inherit;
+  min-width: 200px;
+}
+
+.header {
+  font-size: 1.3rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--bg-main);
+  font-family: var(--header-font-family);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 1rem;
+}

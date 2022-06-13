@@ -1,0 +1,17 @@
+.topicButton {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--white);
+    &:hover {
+        color: var(--primary-light);
+        transition: ease-in-out 0.2s;
+    }
+}
+
+.active {
+    color: var(--primary-light);
+    background-color: var(--bg-primary);
+    transition: ease-in-out 0.2s;
+}

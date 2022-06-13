@@ -1,0 +1,56 @@
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.role {
+  font-family: var(--content-font-family);
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: var(--primary-medium);
+}
+
+.card {
+  margin: 0;
+
+  h4 {
+    margin-bottom: 0.4rem;
+    font-size: 1.1rem;
+
+    &.userRole {
+      margin-bottom: 0;
+      color: var(--primary-medium);
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &:not(:last-child) {
+    margin-bottom: 0.4rem;
+  }
+
+  span {
+    margin-left: 0.5rem;
+  }
+}
+.mainContentCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.deleteButton{
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  button{
+    min-width: 80%;
+  }
+}

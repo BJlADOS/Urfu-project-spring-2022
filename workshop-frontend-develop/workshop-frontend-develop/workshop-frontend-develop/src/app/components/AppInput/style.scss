@@ -1,0 +1,19 @@
+.appInput {
+  width: 100%;
+  padding: 0 0.5rem;
+  color: var(--text-main);
+  border: var(--input-border);
+  border-radius: var(--border-radius);
+  background-color: var(--bg-secondary);
+  box-sizing: border-box;
+  line-height: 2rem;
+
+  &:focus {
+    outline: 0;
+    border-color: var(--primary);
+  }
+}
+
+textarea.appInput  {
+  line-height: 1.5rem;
+}

@@ -1,0 +1,14 @@
+.capacityButtons {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 0.5rem;
+}
+
+.card {
+  width: 100%;
+
+  p {
+    width: 100%;
+    color: var(--blue-4);
+  }
+}

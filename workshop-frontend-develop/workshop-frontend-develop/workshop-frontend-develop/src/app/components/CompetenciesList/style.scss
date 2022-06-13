@@ -1,0 +1,28 @@
+.competenciesList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.competencyChip {
+  flex-wrap: nowrap;
+  max-width: 150px;
+}
+
+.name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.hardSkill {
+  color: var(--primary-medium);
+  border-color: var(--primary-medium);
+  background-color: var(--bg-primary);
+}
+
+.softSkill {
+  color: var(--accent);
+  border-color: var(--accent);
+  background-color: var(--bg-accent);
+}

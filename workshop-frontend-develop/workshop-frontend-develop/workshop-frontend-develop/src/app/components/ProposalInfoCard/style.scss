@@ -1,0 +1,72 @@
+.card {
+  width: 100%;
+
+  h4 {
+    margin-bottom: 0.4rem;
+    font-size: 1.2rem;
+  }
+
+  p {
+    margin: 0;
+    white-space: pre-line;
+  }
+}
+
+.imgWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: auto;
+  margin: auto;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .logo {
+    height: 100px;
+    width: 100px;
+    padding: 15px;
+    border-radius: var(--border-radius);
+    background-color: var(--text-main);
+    color: var(--bg-secondary);
+  }
+}
+
+.addImgButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.infoLine {
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0.5rem 0;
+
+  .title {
+    font-family: var(--header-font-family);
+    margin: 0.5rem 0;
+  }
+
+  .info {
+    color: var(--primary);
+    font-size: 1.1rem;
+  }
+}
+
+.editField {
+  width: 100%;
+  max-width: 500px;
+}
+
+.textEditor {
+  min-height: 5rem;
+  resize: vertical;
+}

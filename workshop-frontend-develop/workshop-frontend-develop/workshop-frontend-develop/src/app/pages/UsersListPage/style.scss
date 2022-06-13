@@ -1,0 +1,26 @@
+.card {
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+.userRole {
+  font-family: var(--content-font-family);
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+.userCardHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.addUserButton {
+  margin-top: 1rem;
+  display: flex;
+  align-self: center;
+  min-width: 40%;
+}

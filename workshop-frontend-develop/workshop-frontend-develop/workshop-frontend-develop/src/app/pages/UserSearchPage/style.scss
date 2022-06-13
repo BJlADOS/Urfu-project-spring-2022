@@ -1,0 +1,35 @@
+#scrollContent {
+  overflow: scroll;
+}
+
+.headerCard {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .projectsCount {
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+    color: var(--grey-2);
+  }
+}
+
+.search {
+  margin-bottom: 0.5rem;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  text-align: center;
+}
+
+.SearchCompetencies {
+  margin-bottom: 0.3rem;
+}
+
+.resetButton {
+  margin-top: 0.3rem;
+}

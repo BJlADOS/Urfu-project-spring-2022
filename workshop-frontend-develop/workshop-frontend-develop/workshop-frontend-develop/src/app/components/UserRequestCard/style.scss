@@ -1,0 +1,55 @@
+
+.mainContentRequestCard{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+
+  .card{
+    flex:2.4;
+    margin-right: 0.8rem;
+    min-height: 180px;
+      div:last-child{
+      justify-content: space-between;
+    }
+  }
+  .userCardHeader{
+    display: flex;
+    justify-content: space-between;
+    span:last-of-type{
+      color: var(--blue-4);
+    }
+  }
+  .buttonsCard{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    flex: 0.5;
+    div:first-of-type{
+      justify-content: center;
+      button{
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+  .mainContentRequestCard {
+    flex-direction: column;
+
+    div:first-of-type {
+      margin-right: 0;
+    }
+    .buttonsCard{
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      margin-top:0.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+}
+.aboutButton{
+  display: flex;
+  align-self: flex-end;
+}

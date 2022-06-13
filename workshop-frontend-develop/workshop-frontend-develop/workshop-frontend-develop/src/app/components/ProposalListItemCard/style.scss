@@ -1,0 +1,88 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  
+    svg {
+      font-size: 1rem;
+      margin-left: 0.3rem;
+      vertical-align: top;
+      color: var(--primary);
+    }
+  }
+  
+  .proposalRow {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+  }
+  
+  .card {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .sideCardContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto 0;
+  
+    .text {
+      margin: auto 0;
+      padding-right: 0.2rem;
+      flex: 1;
+    }
+  
+    h5 {
+      font-size: 1rem;
+  
+      &:not(:first-child) {
+        margin-top: 1rem;
+      }
+    }
+  }
+  
+  .largeSection {
+    display: flex;
+    flex: 3;
+  }
+  
+  .smallSection {
+    display: flex;
+    margin-left: 1rem;
+    flex: 1;
+    min-width: 150px;
+  }
+  
+  .proposalStats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    color: var(--grey-2);
+  
+    span {
+      white-space: nowrap;
+  
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+    }
+  }
+
+  .approved {
+      color: var(--primary-medium);
+  }
+
+  .rejected {
+      color: var(--danger);
+  }
+    
+  .pending {
+      color: var(--grey-2);
+  }

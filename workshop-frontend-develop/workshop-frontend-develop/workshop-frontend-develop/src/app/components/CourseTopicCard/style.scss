@@ -1,0 +1,117 @@
+.teamCardHeader,
+.teamName {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+
+    div:first-child {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .highlightText {
+        margin-left: 0.4rem;
+    }
+}
+
+.highlightText {
+    color: var(--primary);
+}
+
+.teamMemberHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+
+    .name {
+        font-family: var(--header-font-family);
+    }
+
+    .role {
+        color: var(--primary-medium);
+    }
+}
+
+.teamMemberRole {
+    color: var(--primary-medium);
+    font-size: 1.2rem;
+}
+
+.competencies {
+    h5 {
+        margin: 0.3rem 0;
+        font-size: 1.1rem;
+    }
+}
+
+.emptyTeam {
+    font-family: var(--header-font-family);
+    font-size: 1.2rem;
+}
+
+.dialogInnerCard {
+    width: 100%;
+    margin-bottom: 1rem;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.roleButton {
+    margin-bottom: 0.6rem;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.addMember {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+}
+
+.courseStats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    color: var(--grey-2);
+}
+
+.appCard {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-secondary);
+    border-radius: var(--border-radius);
+    margin: auto;
+    text-decoration: inherit;
+    color: inherit;
+    min-width: 200px;
+}
+
+.header {
+    font-size: 1.3rem;
+    padding: 1rem;
+    border-bottom: 1px solid var(--bg-main);
+    font-family: var(--header-font-family);
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}

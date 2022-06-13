@@ -1,0 +1,23 @@
+.controlWrapper {
+  display: flex;
+  align-items: center;
+
+  &:after {
+    transform: rotate(45deg);
+    content: "";
+    border-right: var(--input-border);
+    border-bottom: var(--input-border);
+    pointer-events: none;
+    display: inline-block;
+    position: absolute;
+    right: 1rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-top: -0.3rem;
+  }
+}
+
+.readonlyDropdown {
+  cursor: pointer;
+  padding-right: 2rem;
+}

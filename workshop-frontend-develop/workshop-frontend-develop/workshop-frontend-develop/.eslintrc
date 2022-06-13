@@ -1,0 +1,128 @@
+{
+  "extends": [
+    "standard",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "camelcase": "error",
+    "no-console": 0,
+    "new-cap": 0,
+    "strict": 0,
+    "no-underscore-dangle": 0,
+    "no-use-before-define": 0,
+    "quotes": [
+      "warn",
+      "single",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
+    "jsx-quotes": [
+      1,
+      "prefer-single"
+    ],
+    "semi": [2, "never"],
+    "space-before-function-paren": ["warn", "never"],
+    "eqeqeq": 0,
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/no-namespace": 0,
+    "react/display-name": 0,
+    "@typescript-eslint/no-var-requires": 0,
+    "react/prop-types": 0,
+    "react/no-string-refs": 0,
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "eol-last": "error",
+    "object-property-newline": 2,
+    "object-curly-newline": [
+      "error"
+    ],
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "object-curly-spacing": [
+      2,
+      "always"
+    ],
+    "prefer-destructuring": [
+      "error",
+      {
+        "object": true,
+        "array": false
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always"
+      }
+    ],
+    "react/jsx-max-props-per-line": [
+      1,
+      {
+        "maximum": 1
+      }
+    ],
+    "react/jsx-first-prop-new-line": [
+      1
+    ],
+    "no-trailing-spaces": 2,
+    "react/jsx-closing-bracket-location": [
+      2,
+      "line-aligned"
+    ],
+    "no-param-reassign": 2,
+    "arrow-body-style": [
+      "error",
+      "as-needed"
+    ],
+    "consistent-return": 2,
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": [
+          "const",
+          "let",
+          "var"
+        ],
+        "next": "*"
+      },
+      {
+        "blankLine": "any",
+        "prev": [
+          "const",
+          "let",
+          "var"
+        ],
+        "next": [
+          "const",
+          "let",
+          "var"
+        ]
+      }
+    ]
+  }
+}

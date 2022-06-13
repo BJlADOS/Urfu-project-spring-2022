@@ -1,0 +1,22 @@
+.dialogContent {
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  .dialogInnerCard:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+.expert {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    width: 2rem;
+    height: 2rem;
+  }
+}

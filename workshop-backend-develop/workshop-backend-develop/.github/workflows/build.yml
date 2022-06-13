@@ -1,0 +1,110 @@
+name: Build
+on:
+  workflow_dispatch:
+    inputs:
+      backend_branch:
+        description: "Branch to build Backend from"
+        default: "develop"
+        required: true
+        type: string
+      frontend_branch:
+        description: "Branch to build Frontend from"
+        default: "develop"
+        required: true
+        type: string
+      production:
+        description: "Build for production"
+        default: true
+        type: boolean
+      create_migration_script:
+        description: "Create DB migration script"
+        default: false
+        type: boolean
+
+jobs:
+  build-frontend:
+    name: Build Frontend
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          repository: urfu-projects-workshop/workshop-frontend
+          ref: ${{ github.event.inputs.frontend_branch }}
+          token: ${{ secrets.ORG_ADMIN_GITHUB_TOKEN }}
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project for development
+        if: ${{ github.event.inputs.production == 'false' }}
+        run: npm run build
+
+      - name: Build project for production
+        if: ${{ github.event.inputs.production == 'true' }}
+        run: npm run build:prod
+
+      - name: Archive frontend build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: frontend-build-output
+          path: build
+
+  build-backend:
+    name: Build Backend
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.inputs.backend_branch }}
+
+      - name: Setup dotnet CLI
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: "3.1"
+
+      - name: Setup 'dotnet ef' tool
+        if: ${{ github.event.inputs.create_migration_script == 'true' }}
+        run: dotnet tool install --global dotnet-ef
+
+      - name: Build and Publish Backend for development
+        if: ${{ github.event.inputs.production == 'false' }}
+        run: dotnet publish .\Workshop.Web\Workshop.Web.csproj --configuration Staging --framework netcoreapp3.1 --output .\BuildOutput --self-contained false
+
+      - name: Build and Publish Backend for production
+        if: ${{ github.event.inputs.production == 'true' }}
+        run: dotnet publish .\Workshop.Web\Workshop.Web.csproj --configuration Release --framework netcoreapp3.1 --output .\BuildOutput --self-contained false
+
+      - name: Create DB migration script
+        if: ${{ github.event.inputs.create_migration_script == 'true' }}
+        run: dotnet ef migrations script --idempotent --project Workshop.Web --output .\BuildOutput\migration.sql
+
+      - name: Archive backend build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: backend-build-output
+          path: BuildOutput
+
+  combine-output:
+    name: Combine build output
+    needs: [build-frontend, build-backend]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Backend build output
+        uses: actions/download-artifact@v3
+        with:
+          name: backend-build-output
+          path: production-build
+
+      - name: Download Frontend build output
+        uses: actions/download-artifact@v3
+        with:
+          name: frontend-build-output
+          path: production-build/wwwroot
+
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-output
+          path: production-build

@@ -1,0 +1,23 @@
+.competenciesCard {
+  margin-top: 1rem;
+
+  .input {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 500px;
+
+    .field {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+
+  .list {
+    margin-top: 0.5rem;
+  }
+}
+
+

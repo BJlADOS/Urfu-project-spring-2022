@@ -1,0 +1,110 @@
+.projectNameCard {
+  h2 {
+    font-size: 1.7rem;
+    margin: 0;
+  }
+}
+
+.rectangle {
+  counter-reset: li;
+  list-style: none;
+  font-family: var(--content-font-family);
+  padding: 0;
+
+  ol {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    position: relative;
+    display: block;
+    padding: 0.4rem 0.8rem;
+    margin-bottom: 0.5rem;
+    margin-left: 2.5rem;
+    color: var(--primary-light);
+    text-decoration: none;
+
+    span {
+      color: var(--text-main);
+    }
+
+    &:before {
+      content: counter(li);
+      counter-increment: li;
+      position: absolute;
+      left: -2rem;
+      top: 50%;
+      margin-top: -1rem;
+      height: 2rem;
+      width: 2rem;
+      line-height: 2rem;
+      background-color: var(--bg-primary);
+      border: 1px solid var(--primary-light);
+      border-radius: var(--border-radius);
+      text-align: center;
+      font-weight: bold;
+      z-index: 2;
+    }
+
+    &:not(:last-child)::after {
+      position: absolute;
+      top: 2rem;
+      left: -1rem;
+      width: 1px;
+      height: 100%;
+      border-left: 1px solid var(--primary-light);
+      content: "";
+      z-index: 1;
+    }
+  }
+}
+
+.pageContent {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin-top: 1rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.largeColumn {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+  width: 100%;
+  margin-right: 1rem;
+}
+
+.smallColumn {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  width: 100%;
+}
+
+.card:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .pageContent {
+    flex-direction: column-reverse;
+    flex: 1;
+  }
+
+  .largeColumn {
+    margin: 0;
+    flex: 1;
+  }
+
+  .smallColumn {
+    margin: 0;
+    flex: 1;
+  }
+
+  .projectLink {
+    margin-bottom: 1rem;
+  }
+}

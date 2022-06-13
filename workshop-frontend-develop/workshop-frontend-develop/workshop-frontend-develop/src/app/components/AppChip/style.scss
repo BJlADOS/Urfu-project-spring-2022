@@ -1,0 +1,17 @@
+.appChip {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  margin: 0.2rem 0.8rem 0.2rem 0;
+  padding: 0.2rem 0.4rem;
+  border: 1px solid var(--text-main);
+  border-radius: var(--border-radius);
+  color: var(--text-main);
+}
+
+.chipButton {
+  margin-left: 0.3rem;
+  cursor: pointer;
+}

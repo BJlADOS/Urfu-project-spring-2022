@@ -1,0 +1,15 @@
+.buttonsCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContentRequestCard {
+  display: flex;
+  flex-direction: row;
+}
+
+.headerCard {
+  h2 {
+    font-size: 1.8rem;
+  }
+}

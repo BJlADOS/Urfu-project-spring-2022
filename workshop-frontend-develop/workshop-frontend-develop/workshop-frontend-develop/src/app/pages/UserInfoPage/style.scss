@@ -1,0 +1,13 @@
+.card {
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+.cardInnerRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

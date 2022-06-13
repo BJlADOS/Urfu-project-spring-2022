@@ -1,0 +1,110 @@
+.mainContentCard{
+  display: flex;
+  flex:2.5;
+  margin-right: 1rem;
+}
+.actionButtons{
+  display: flex;
+  flex: 0.5;
+  margin: 0 auto;
+  div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    button:first-of-type{
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+.mainContent{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+.headerRequestCard{
+  text-align: left;
+  .additional{
+    display: inline-block;
+    color: var(--blue-4);
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    opacity: 0.95;
+    div:first-of-type{
+      margin-bottom: 1rem;
+    }
+  }
+}
+.dialogContent{
+  display: flex;
+  flex-direction: row;
+  p{
+    white-space: pre-line;
+  }
+}
+.dialog{
+  max-width: 1200px;
+}
+.projectNameCard{
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.largeColumn{
+  margin-right: 1rem;
+  display: flex;
+  flex-basis: 100%;
+  margin: 0 auto;
+  div:first-of-type{
+      width: 100%;
+      margin: 0;
+      margin-right: 1rem;
+
+  }
+}
+.additionalContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactCard{
+  margin: 0;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.headerTeamCard{
+  margin-bottom: 1rem;
+}
+.teamContent{
+  display: flex;
+  flex-direction: column;
+  div:first-child{
+    padding-right: 2rem;
+  }
+}
+.dialogMainContent{
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media  only screen and (max-width: 700px) {
+  .dialogContent{
+    flex-direction: column;
+  }
+  .additionalContent{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex: 1;
+    align-items: flex-start;
+  }
+  .largeColumn{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .teamContent{
+    flex-wrap: wrap;
+    flex-direction: row;
+
+  }
+}

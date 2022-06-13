@@ -1,0 +1,196 @@
+.userInfoCard {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  span {
+    display: flex;
+    margin-top: 0.4rem;
+    color: var(--primary-light);
+  }
+}
+
+.editButton {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+
+.competencyCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .helper {
+    font-family: var(--content-font-family);
+    font-size: 1.1rem;
+    color: var(--primary-medium);
+  }
+}
+
+.myCompetencies {
+  margin: 1rem 0;
+  flex:1;
+}
+
+.myCompetenciesContent {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.competencySearch {
+  max-width: 400px;
+  width: 100%;
+}
+
+.competenciesList {
+  margin-top: 0.6rem;
+}
+
+.editHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+}
+
+.editForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex: 1;
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  button {
+    max-width: 200px;
+    height: fit-content;
+    margin-top: auto;
+  }
+}
+
+.formField {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  span {
+    font-family: var(--header-font-family);
+    font-size: 1.3rem;
+
+    &.required:after {
+      content: "*";
+      margin-left: 0.2rem;
+      color: var(--primary);
+    }
+  }
+
+  input,
+  textarea {
+    margin-top: 0.2rem;
+  }
+
+  textarea{
+    min-width: 420px;
+    min-height: 110px;
+    max-height: 230px;
+    height: 110px;
+  }
+}
+
+.typeCard {
+  display: flex;
+  justify-content: space-between;
+
+  div:last-of-type {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+}
+
+.phoneCard {
+  margin-top: 1rem;
+}
+
+.expertUserInfo {
+  margin-bottom: 1rem;
+}
+
+.expertFormCard {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.editFormExpert {
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  button {
+    max-width: 200px;
+    height: fit-content;
+    margin-top: 0.8rem;
+    margin-left: auto;
+  }
+}
+
+.competenciesCards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+   div:first-of-type{
+     margin-right: 1rem;
+   }
+}
+.aboutCard{
+  resize: vertical;
+}
+.cardArea{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+@media only screen and (max-width: 530px) {
+  .formField{
+    textarea{
+      min-width: 100%;
+    }
+  }
+  .cardArea{
+    input{
+      min-width: 100%;
+    }
+  }
+  .competenciesCards{
+    flex-direction: column;
+    div:first-of-type{
+      margin-right: 0;
+    }
+    justify-content: flex-start;
+  }
+
+}

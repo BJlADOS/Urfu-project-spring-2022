@@ -1,0 +1,28 @@
+.card,
+.teamCard {
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+  }
+}
+
+.highlight {
+  color: var(--primary-medium);
+  margin-left: 0.5rem;
+}
+
+.expertCardHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

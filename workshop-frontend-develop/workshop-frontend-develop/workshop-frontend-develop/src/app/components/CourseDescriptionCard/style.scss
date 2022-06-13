@@ -1,0 +1,30 @@
+.card {
+  width: 100%;
+
+  h4 {
+    margin-bottom: 0.4rem;
+    font-size: 1.2rem;
+  }
+
+  p {
+    margin: 0;
+    white-space: pre-line;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .closed {
+    color: var(--danger);
+    font-size: 1rem;
+  }
+}
+
+.textEditor {
+  min-height: 5rem;
+  resize: vertical;
+}

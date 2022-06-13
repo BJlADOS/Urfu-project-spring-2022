@@ -1,0 +1,170 @@
+.auditoriumCard {
+  flex: 1;
+  height: 100%;
+
+  h4 {
+    span {
+      color: var(--primary);
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+.auditoriumNameInput {
+  width: 100%;
+  max-width: 400px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.startEditingButton {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.controlButtons {
+  display: flex;
+  flex-direction: row;
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.largeCol {
+  flex: 5;
+  min-width: 200px;
+}
+
+.smallCol {
+  display: flex;
+  margin-left: 1rem;
+  flex: 3;
+  min-width: 200px;
+}
+
+.expertsCard {
+  height: 100%;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  flex: 1;
+}
+
+.sideCardContent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  h5 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .expertName {
+    display: flex;
+    align-items: center;
+
+    button {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .addExpert {
+    margin-top: 0.5rem;
+  }
+}
+
+.teamSlot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &:not(:last-child) {
+    margin-bottom: 0.6rem;
+  }
+
+  button {
+    margin-right: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .teamLink {
+    font-size: 0.9rem;
+    margin-left: 0.2rem;
+    padding: 0;
+  }
+
+  .myTeam {
+    font-weight: bold;
+    color: var(--primary);
+  }
+
+  .date {
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+
+  .slotDeleteBtn {
+    padding: 0;
+  }
+}
+
+.dialogCard {
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+  }
+
+  &.clickable {
+    cursor: pointer;
+  }
+}
+
+.downloadSchedule {
+  margin: 1rem auto;
+}
+
+.highlight {
+  color: var(--primary-medium);
+  margin-left: 0.5rem;
+}
+
+.addSlot {
+  margin-top: 1.4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .smallCol {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}

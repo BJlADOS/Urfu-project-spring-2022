@@ -1,0 +1,17 @@
+.dialogContent {
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  .dialogInnerCard:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+.freeUserCardHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

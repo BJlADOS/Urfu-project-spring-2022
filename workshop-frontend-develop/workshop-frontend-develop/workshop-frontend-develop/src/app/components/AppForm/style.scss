@@ -1,0 +1,10 @@
+.formField {
+  &input:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+
+.error {
+  margin-top: 0.2rem;
+  color: var(--primary);
+}
